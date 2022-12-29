@@ -29,6 +29,11 @@ function FindProxyForURL(url, host) {
         return PROXY;
     }
     
+     if (shExpMatch(host,"*.coop.br*")  ) {
+        return PROXY;
+    }
+    
+    
     // Everything else directly!
     return "DIRECT";
 }
