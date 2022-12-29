@@ -25,6 +25,10 @@ function FindProxyForURL(url, host) {
      if (shExpMatch(host,"*jbsp.*")  ) {
         return PROXY;
     }
+     if (shExpMatch(host,"*.sisbr.*")  ) {
+        return PROXY;
+    }
+    
     // Everything else directly!
     return "DIRECT";
 }
