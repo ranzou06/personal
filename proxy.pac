@@ -9,6 +9,22 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host,"*homologacao*")  ) {
         return PROXY;
     }
+    
+    if (shExpMatch(host,"*wasd.*")  ) {
+        return PROXY;
+    }
+    
+     if (shExpMatch(host,"*wash.*")  ) {
+        return PROXY;
+    }
+    
+     if (shExpMatch(host,"*wasp.*")  ) {
+        return PROXY;
+    }
+    
+     if (shExpMatch(host,"*jbsp.*")  ) {
+        return PROXY;
+    }
     // Everything else directly!
     return "DIRECT";
 }
