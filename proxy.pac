@@ -5,6 +5,10 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host,"*sicoob*")  ) {
         return PROXY;
     }
+    
+     if (shExpMatch(host,"*sisbr.coop*")  ) {
+        return PROXY;
+    }
 
     if (shExpMatch(host,"*homologacao*")  ) {
         return PROXY;
