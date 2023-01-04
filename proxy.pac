@@ -33,6 +33,38 @@ function FindProxyForURL(url, host) {
         return PROXY;
     }
     
+    if (shExpMatch(host,"*db2t*")  ) {
+        return PROXY;
+    }
+    
+     if (shExpMatch(host,"*db2d*")  ) {
+        return PROXY;
+    }
+    
+     if (shExpMatch(host,"*db2h*")  ) {
+        return PROXY;
+    }
+    
+    if (shExpMatch(host,"*db2p*")  ) {
+        return PROXY;
+    }
+    
+     if (shExpMatch(host,"*sqlh*")  ) {
+        return PROXY;
+    }
+    
+    if (shExpMatch(host,"*sqlt*")  ) {
+        return PROXY;
+    }
+    
+    if (shExpMatch(host,"*sqlhd*")  ) {
+        return PROXY;
+    }
+    
+    if (shExpMatch(host,"*sqlp*")  ) {
+        return PROXY;
+    }
+    
     
     // Everything else directly!
     return "DIRECT";
